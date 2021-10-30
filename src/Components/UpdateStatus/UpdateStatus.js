@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Form, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import './UpdateStatus.css'
 
 const UpdateStatus = () => {
     const { statusId } = useParams();
@@ -32,7 +33,7 @@ const UpdateStatus = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.modifiedCount > 0) {
-                    alert('Update Successful');
+                    alert('Booking Confirmed');
                     setStatus({});
 
                 }
@@ -53,11 +54,11 @@ const UpdateStatus = () => {
 
             <h2 className="my-4 text-center">Update Status</h2>
 
-            <Form className="" >
-                <Row className="w-50 ">
+            <Form className="status" >
+                <Row className="">
                     <Col>
-                        <Form.Control className="input-field" onChange={handleStatusChange} value={status.status || ''} required />
-                        <button className="btn btn-secondary" onClick={handleUpdateStatus}>Update</button>
+                        <Form.Control className="input-field text-center" onChange={handleStatusChange} value={status.status || ''} required />
+                        <button className="btn btn-secondary input-field" onClick={handleUpdateStatus}>Update</button>
                     </Col>
                 </Row>
 

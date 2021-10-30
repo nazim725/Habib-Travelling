@@ -12,10 +12,7 @@ const Footer = () => {
 
                 </div>
 
-                <div>
-                    <h4 className='text-center text-white'>Acc. Member</h4>
-                    <img src="https://utility-assets.s3.ap-southeast-1.amazonaws.com/e-cab.png" alt="" />
-                </div>
+                
                 <div>
                     <h4 className='text-center text-white'>Verified by</h4>
                     <img src="https://utility-assets.s3.ap-southeast-1.amazonaws.com/media/assets/comodoSecure.png" alt="" />
@@ -32,26 +29,17 @@ const Footer = () => {
 
             <div className='footer-2nd-row'>
                 <div>
-                    <p className='text-primary'> <i class="fas fa-envelope"></i> nazimhabib77@gmail.com</p>
+                    <p className='text-primary'> <i class="fas fa-envelope"></i> habib@gmail.com</p>
                     <p className='text-primary'><i class="fas fa-phone-alt"></i>  01830082347</p>
                     <p className='text-primary'><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-facebook-messenger"></i> <i class="fab fa-twitter"></i> <i class="fab fa-linkedin-in"></i></p>
                 </div>
+                
                 <div>
-                    <p className='text-white'>We Accept</p>
-                    <img src="https://utility-assets.s3.ap-southeast-1.amazonaws.com/amex-new.png" alt="" />
+                <p className='text-white'>We Accept</p>
+                    <img className='' src="https://utility-assets.s3.ap-southeast-1.amazonaws.com/visa-new.png" alt="" />
                 </div>
-                <div>
-                    <p></p>
-                    <img className='mt-4' src="https://utility-assets.s3.ap-southeast-1.amazonaws.com/visa-new.png" alt="" />
-                </div>
-                <div>
-                    <p></p>
-                    <img className='mt-4' src="https://utility-assets.s3.ap-southeast-1.amazonaws.com/mastercard-new.png" alt="" />
-                </div>
-                <div>
-                    <p></p>
-                    <img className='mt-4' src="https://utility-assets.s3.ap-southeast-1.amazonaws.com/dbbl-new.png" alt="" />
-                </div>
+               
+               
                 <div>
                     <p></p>
                     <img className='mt-4' src="https://utility-assets.s3.ap-southeast-1.amazonaws.com/bkash-new.png" alt="" />
@@ -61,6 +49,7 @@ const Footer = () => {
                     <img className='mt-4' src="https://utility-assets.s3.ap-southeast-1.amazonaws.com/nogod-new.png" alt="" />
                 </div>
             </div>
+            <p className='text-white text-center mt-2'>Copyright @ 2021. Habib's Travelling. All rights reserved.</p>
 
         </div>
     );

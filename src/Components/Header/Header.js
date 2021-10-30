@@ -11,10 +11,12 @@ const Header = () => {
             <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand href="#home">Habib's Travelling</Navbar.Brand>
-                    < Navbar.Toggle className="ms-5" />
+                    < Navbar.Toggle className="nav-toggole" />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={Link} to="/home#home">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/services#services">Services</Nav.Link>
+                        <Nav.Link as={Link} to="/services#services">Tours</Nav.Link>
+                        <Nav.Link as={Link} to="/hotels#hotels">Hotels</Nav.Link>
+                        <Nav.Link as={Link} to="/about#about">About Us</Nav.Link>
                         {
                             user?.email &&   <Nav.Link as={Link} to="/dashBoard">Dashboard</Nav.Link>
                         }

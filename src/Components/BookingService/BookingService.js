@@ -42,7 +42,7 @@ const BookingService = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert('Successfully added the item.')
+                    alert('Successfully Booking Your Tours')
                     e.target.reset();
                 }
             })

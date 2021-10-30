@@ -17,3 +17,19 @@ hr{
     background-color: blue;
     font-weight: bold;
 }
+
+@media screen and (max-width:768px) {
+    .about-item{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+    }
+    .about-container{
+        margin: 0 10px;
+        padding-bottom: 20px;
+    }
+    
+   
+
+    
+}

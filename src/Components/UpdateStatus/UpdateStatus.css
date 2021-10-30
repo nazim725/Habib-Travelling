@@ -1,0 +1,19 @@
+.status{
+    margin-left: 370px;
+}
+
+.input-field{
+    width: 50%;
+}
+
+@media screen and (max-width:768px) {
+    .status{
+        margin-left: 10px;
+    }
+    .input-field{
+        width: 100%;
+    }
+    
+
+    
+}
