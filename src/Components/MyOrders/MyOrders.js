@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import useAuth from '../../Hooks/useAuth';
 import Order from '../Order/Order';
 import './MyOrders.css'
-import {Table } from 'react-bootstrap';
+
 
 const MyOrders = () => {
     const { user } = useAuth()

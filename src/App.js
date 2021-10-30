@@ -9,6 +9,10 @@ import Login from './Components/Login/Login';
 import MyOrders from './Components/MyOrders/MyOrders';
 import Services from './Components/Services/Services';
 import AuthProvider from './Context/AuthProvider';
+import ManageOrderItem from './Components/ManageOrderItem/ManageOrderItem';
+import ManageOrder from './Components/Manage Orders/ManageOrder';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import UpdateStatus from './Components/UpdateStatus/UpdateStatus';
 
 function App() {
   return (
@@ -35,12 +39,21 @@ function App() {
             <Services></Services>
           </Route>
 
-          <Route path='/bookingService/:serviceId'>
+          <PrivateRoute path='/bookingService/:serviceId'>
             <BookingService></BookingService>
-          </Route>
+          </PrivateRoute>
 
           <Route path='/myOrders'>
             <MyOrders></MyOrders>
+          </Route>
+
+          <Route path='/manageOrder'>
+            <ManageOrder></ManageOrder>
+
+          </Route>
+
+          <Route path='updateStatus/:statusId'>
+            <UpdateStatus></UpdateStatus>
           </Route>
 
 

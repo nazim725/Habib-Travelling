@@ -30,7 +30,8 @@ const BookingService = () => {
         const location=locationRef.current.value;
         const img = imgRef.current.value;
         const email=emailRef.current.value;
-        const newOrder = { name, price, img,duration,location,email}
+        const status='Pending'
+        const newOrder = { name, price, img,duration,location,email,status}
         fetch('http://localhost:5000/orders', {
             method: 'POST',
             headers: {
