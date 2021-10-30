@@ -24,7 +24,7 @@ const ManageOrderItem = (props) => {
                                 <p>Status:{status}</p>
                                 <Button onClick={()=>handleDeleteOrder(_id)} variant='warning'>Cancel Order</Button>
                                 {/* <Button onClick={()=>handleUpdateStatus(_id)} variant='warning'>Approved order</Button> */}
-                                {/* <Link to={`/updateStatus/${_id}`}><Button  variant='primary'>Approved order</Button></Link> */}
+                                <Link to={`/updateStatus/${_id}`}><Button  variant='primary'>Approved order</Button></Link>
 
                                
 

@@ -21,7 +21,7 @@ const MyOrders = () => {
     const handleDeleteOrder = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `https://guarded-tundra-04860.herokuapp.com/${id}`;
+            const url = `https://guarded-tundra-04860.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

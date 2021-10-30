@@ -1,0 +1,22 @@
+
+.footer{
+    
+    padding: 0 20px;
+    background-color: darkslategray;
+}
+.footer-1at-row{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-column-gap: 15px;
+}
+.footer-2nd-row{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-column-gap: 15px;
+}
+.footer-1at-row img{
+    width: 200px;
+}
+.footer-2nd-row img{
+    width: 100px;
+}

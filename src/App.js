@@ -13,6 +13,11 @@ import ManageOrderItem from './Components/ManageOrderItem/ManageOrderItem';
 import ManageOrder from './Components/Manage Orders/ManageOrder';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import UpdateStatus from './Components/UpdateStatus/UpdateStatus';
+import About from './Components/About/About';
+import AddHotel from './Components/AddHotels/AddHotel';
+import Hotels from './Components/Hotels/Hotels';
+import DashBoard from './Components/DashBoard/DashBoard';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -52,13 +57,31 @@ function App() {
 
           </Route>
 
-          <Route path='updateStatus/:statusId'>
-            <UpdateStatus></UpdateStatus>
+          <Route path='/updateStatus/:statusId'>
+           <UpdateStatus></UpdateStatus>
+          </Route>
+          <Route path='/about'>
+            <About></About>
+          </Route>
+
+          <Route path='/addHotel'>
+            <AddHotel></AddHotel>
+          </Route>
+          <Route path='/hotels'>
+            <Hotels></Hotels>
+          </Route>
+          <Route path='/dashBoard'>
+            <DashBoard></DashBoard>
+          </Route>
+
+          <Route path='/footer'>
+            <Footer></Footer>
           </Route>
 
 
 
         </Switch>
+        <Footer></Footer>
       </Router>
      </AuthProvider>
 

@@ -1,0 +1,19 @@
+.about-item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.about-container{
+    margin: 0 40px;
+    padding-bottom: 40px;
+}
+.heading{
+    border-radius: 15px;
+}
+hr{
+    width: 130px;
+    margin: 0 auto;
+    padding: 2px;
+    background-color: blue;
+    font-weight: bold;
+}
