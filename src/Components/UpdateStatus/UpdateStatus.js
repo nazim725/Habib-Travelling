@@ -5,7 +5,7 @@ const UpdateStatus = () => {
     const {statusId}=useParams();
     const [status,setStatus]=useState({})
 
-    const url = `http://localhost:5000/orders/${statusId}`
+    const url = `https://guarded-tundra-04860.herokuapp.com/orders/${statusId}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -17,7 +17,7 @@ const UpdateStatus = () => {
 
 
     const handleUpdateStatus = e => {
-        const url = `http://localhost:5000/orders${statusId}`;
+        const url = `https://guarded-tundra-04860.herokuapp.com/norders${statusId}`;
         console.log(url)
         fetch(url, {
             method: 'PUT',

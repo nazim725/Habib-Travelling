@@ -12,7 +12,7 @@ const BookingService = () => {
     const emailRef=useRef();
     const {serviceId}=useParams();
     const [service, setService] = useState([])
-    const url=`http://localhost:5000/services/${serviceId}`;
+    const url=`https://guarded-tundra-04860.herokuapp.com/services/${serviceId}`;
     console.log(url)
     useEffect(() => {
         fetch(url)
@@ -32,7 +32,7 @@ const BookingService = () => {
         const email=emailRef.current.value;
         const status='Pending'
         const newOrder = { name, price, img,duration,location,email,status}
-        fetch('http://localhost:5000/orders', {
+        fetch('https://guarded-tundra-04860.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

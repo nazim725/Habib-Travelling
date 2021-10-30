@@ -17,7 +17,7 @@ const AddService = () => {
         const location=locationRef.current.value;
         const img = imgRef.current.value;
         const newService = { name, price, img,duration,location}
-        fetch('http://localhost:5000/services', {
+        fetch('https://guarded-tundra-04860.herokuapp.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

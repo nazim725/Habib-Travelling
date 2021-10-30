@@ -7,7 +7,7 @@ import './MyOrders.css'
 const MyOrders = () => {
     const { user } = useAuth()
     const [orders, setOrders] = useState([])
-    const url = `http://localhost:5000/orders`;
+    const url = `https://guarded-tundra-04860.herokuapp.com/orders`;
     console.log(url)
     useEffect(() => {
         fetch(url)
@@ -21,7 +21,7 @@ const MyOrders = () => {
     const handleDeleteOrder = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://guarded-tundra-04860.herokuapp.com/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -29,7 +29,7 @@ const MyOrders = () => {
                 .then(data => {
                     if (data.deletedCount > 0) {
                         alert('deleted successfully');
-                        const remainingOrder = orders.filter(order =>order._id !== id);
+                        const remainingOrder = orders.filter(order => order._id !== id);
                         setOrders(remainingOrder);
                     }
                 });
@@ -40,11 +40,11 @@ const MyOrders = () => {
 
         <div className='orders-container'>
 
-            {orders.filter(order => order.email===user.email).map(orderItem => (
-            <Order
-            handleDeleteOrder={handleDeleteOrder}
-            orderItem={orderItem}></Order>
-      ))}
+            {orders.filter(order => order.email === user.email).map(orderItem => (
+                <Order
+                    handleDeleteOrder={handleDeleteOrder}
+                    orderItem={orderItem}></Order>
+            ))}
 
         </div>
     );
