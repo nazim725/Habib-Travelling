@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import Service from '../Service/Service';
 import './Services.css'
+import Zoom from 'react-reveal/Zoom';
 
 const Services = () => {
 
@@ -16,17 +17,20 @@ const Services = () => {
     }, [])
 
     return (
-       <div>
-           <h1 className=" text-center fw-bold my-4 service-heading">Our Travelling Services</h1>
-            <div className="services-container">
-            {
-                services.map(service=><Service 
-                key={service._id}
-                service={service}></Service>)
-            }
+        <div id='services'>
+            <Zoom bottom cascade>
+            <h1 className=" text-center fw-bold my-4 service-heading">Our Travelling Services</h1>
+            </Zoom>
             
+            <div className="services-container">
+                {
+                    services.map(service => <Service
+                        key={service._id}
+                        service={service}></Service>)
+                }
+
             </div>
-       </div>
+        </div>
     );
 };
 

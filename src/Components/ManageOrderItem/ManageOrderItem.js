@@ -22,10 +22,10 @@ const ManageOrderItem = (props) => {
                                     <p>price:  {price} BDT</p>
                                     <p>Duration: {duration} Days</p>
                                     <p>Location: {location}</p>
-                                    <p>Ordered Email:{email}</p>
-                                    <p>Status:{status}</p>
+                                    <p>Ordered Email: {email}</p>
+                                    <p>Status: {status}</p>
                                     <Button onClick={() => handleDeleteOrder(_id)} variant='warning'>Cancel Order</Button>
-                                
+
                                     <Link to={`/updateStatus/${_id}`}><Button className='ms-2' variant='primary'>Approved order</Button></Link>
 
 

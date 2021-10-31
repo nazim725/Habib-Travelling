@@ -19,6 +19,7 @@ import Hotels from './Components/Hotels/Hotels';
 import DashBoard from './Components/DashBoard/DashBoard';
 import Footer from './Components/Footer/Footer';
 import BookingHotel from './Components/BookingHotel/BookingHotel';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
   return (
@@ -81,6 +82,10 @@ function App() {
 
           <Route path='/footer'>
             <Footer></Footer>
+          </Route>
+
+          <Route path='*'>
+            <NotFound></NotFound>
           </Route>
 
 

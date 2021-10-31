@@ -8,7 +8,7 @@ const MyOrders = () => {
     const { user } = useAuth()
     const [orders, setOrders] = useState([])
     const url = `https://guarded-tundra-04860.herokuapp.com/orders`;
-    console.log(url)
+    // console.log(url)
     useEffect(() => {
         fetch(url)
             .then(res => res.json())

@@ -5,7 +5,7 @@ import Zoom from 'react-reveal/Zoom';
 import banner1 from '../../images/banner-1.jpeg'
 import banner2 from '../../images/banner-2.jpeg'
 import banner3 from '../../images/banner-3.jpeg'
-import banner4 from '../../images/banner-4.jpg'
+import banner4 from '../../images/banner-4.png'
 
 const Banner = () => {
     return (

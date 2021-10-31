@@ -1,9 +1,23 @@
 .orders-container{
     display:  grid;
     grid-template-columns: repeat(3, 1fr);
-   
+    
     margin: 0 30px;
 }
 .order-card{
     height: 550px;
+}
+
+@media screen and (max-width:768px) {
+    .orders-container{
+        
+        grid-template-columns: repeat(1, 1fr);
+        
+        margin: 0 10px;
+    }
+    
+    .order-card{
+        height: 580px;
+    }
+    
 }

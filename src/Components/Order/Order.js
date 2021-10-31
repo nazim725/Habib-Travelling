@@ -6,6 +6,8 @@ import Zoom from 'react-reveal/Zoom';
 const Order = (props) => {
     const { name, price, duration, img, location, _id, status } = props.orderItem
     const { handleDeleteOrder } = props
+    const l = props.orderItem.length;
+    console.log(l)
 
     return (
         <div>
@@ -21,7 +23,7 @@ const Order = (props) => {
                                     <p>price:  {price} BDT</p>
                                     <p>Duration: {duration} Days</p>
                                     <p>Location: {location}</p>
-                                    <p>Status:{status}</p>
+                                    <p>Status: {status}</p>
                                     <Button onClick={() => handleDeleteOrder(_id)} variant='warning'>Cancel Order</Button>
 
 
