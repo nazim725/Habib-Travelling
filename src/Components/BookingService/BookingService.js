@@ -1,6 +1,7 @@
 import React,{useRef,useState,useEffect }from 'react';
 import { Col, Form, Row, Button } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import Rotate from 'react-reveal/Rotate';
 
 const BookingService = () => {
    
@@ -56,48 +57,49 @@ const BookingService = () => {
     
 
     return (
-        <div className="add-form  my-4">
-           
-            
-            <Form className="w-100" onSubmit={handleAddService} >
-                <Row className="w-50">
+        <div className=" my-4">
+           <h3 className='text-center text-primary fw-bold my-3 '>Booking Confirmation Form</h3>
+           <Rotate top right cascade>
+            <Form className="add-form " onSubmit={handleAddService} >
+                <Row className="">
                     <Col>
                         <Form.Control className="input-field" ref={nameRef} value={service.name} required />
                     </Col>
                 </Row>
                 
-                <Row className="w-50">
+                <Row className="">
                     <Col>
                         <Form.Control className="input-field" ref={priceRef} value={service.price} required />
                     </Col>
                 </Row>
-                <Row className="w-50">
+                <Row className="">
                     <Col>
                         <Form.Control className="input-field" ref={durationRef} value={service.duration} required />
                     </Col>
                 </Row>
-                <Row className="w-50">
+                <Row className="">
                     <Col>
                         <Form.Control className="input-field" ref={locationRef} value={service.location} required />
                     </Col>
                 </Row>
                 
-                <Row className="w-50">
+                <Row className="">
                     <Col>
                         <Form.Control className="input-field" ref={imgRef} value={service.img} required />
                     </Col>
                 </Row>
-                <Row className="w-50">
+                <Row className="">
                     <Col>
                         <Form.Control type="email" className="input-field" ref={emailRef} placeholder="Email" required />
                     </Col>
                 </Row>
-                <Row className="w-50">
+                <Row className="">
                     <Button className="input-field" variant="primary" type="submit">
                        Booking Confirm
                     </Button>
                 </Row>
             </Form>
+             </Rotate>
         </div>
     );
 };

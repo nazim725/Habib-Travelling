@@ -14,7 +14,7 @@ const MyOrders = () => {
             .then(res => res.json())
             .then(data => {
                 setOrders(data)
-                console.log(data)
+                // console.log(data)
             })
     }, [])
 
@@ -39,6 +39,7 @@ const MyOrders = () => {
     return (
 
         <div className='orders-container'>
+           
 
             {orders.filter(order => order.email === user.email).map(orderItem => (
                 <Order

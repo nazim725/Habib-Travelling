@@ -21,7 +21,7 @@ const Hotel = (props) => {
 
 
                                 </Card.Text>
-                                <Link to={`/bookingService/${_id}`}><button className="btn btn-warning book-button text-secondary fw-bold">Book Now </button></Link>
+                                <Link to={`/bookingHotel/${_id}`}><button className="btn btn-warning book-button text-secondary fw-bold">Book Now </button></Link>
 
                             </Card.Body>
                         </Card>

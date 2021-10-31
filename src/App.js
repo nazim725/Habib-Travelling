@@ -18,6 +18,7 @@ import AddHotel from './Components/AddHotels/AddHotel';
 import Hotels from './Components/Hotels/Hotels';
 import DashBoard from './Components/DashBoard/DashBoard';
 import Footer from './Components/Footer/Footer';
+import BookingHotel from './Components/BookingHotel/BookingHotel';
 
 function App() {
   return (
@@ -46,6 +47,10 @@ function App() {
 
           <PrivateRoute path='/bookingService/:serviceId'>
             <BookingService></BookingService>
+          </PrivateRoute>
+
+          <PrivateRoute path='/bookingHotel/:hotelId'>
+            <BookingHotel></BookingHotel>
           </PrivateRoute>
 
           <Route path='/myOrders'>

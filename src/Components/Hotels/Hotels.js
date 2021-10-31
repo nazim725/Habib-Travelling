@@ -9,12 +9,12 @@ const Hotels = () => {
             .then(res => res.json())
             .then(data => {
                 setHotels(data)
-                console.log(data)
+                // console.log(data)
             })
     }, [])
     return (
         <div>
-           <h1 className="text-primary text-center fw-bold my-4">Our Hotel Booking Services</h1>
+           <h1 className=" text-center fw-bold my-4 service-heading">Our Hotel Booking Services</h1>
             <div className="services-container">
             {
                hotels.map(hotel=><Hotel

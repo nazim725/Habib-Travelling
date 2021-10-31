@@ -37,18 +37,23 @@ const ManageOrder = () => {
         }
     }
 
-   
+
 
     return (
-        <div className="orders-container">
 
-            {
-                orders.map(order => <ManageOrderItem
-                    order={order}
-                    key={order._id}
-                    handleDeleteOrder={handleDeleteOrder}></ManageOrderItem>)
-            }
+        <div>
+            <h4 className='text-center text-primary my-3 '>Total Orders: {orders.length}</h4>
+            <div className="orders-container">
 
+
+                {
+                    orders.map(order => <ManageOrderItem
+                        order={order}
+                        key={order._id}
+                        handleDeleteOrder={handleDeleteOrder}></ManageOrderItem>)
+                }
+
+            </div>
         </div>
     );
 };
